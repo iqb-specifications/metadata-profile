@@ -1,5 +1,5 @@
 {
-  "$id": "metadata-profile@iqb-standard@0.9",
+  "$id": "metadata-profile@iqb-standard@0.10",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Metadata Profile",
   "description": "Data interface for defining metadata for objects based on vocabularies of IQB.",
@@ -14,14 +14,15 @@
       "$ref": "#/definitions/language_coded_texts",
       "description": "Name of the profile"
     },
-    "type": {
+    "profileType": {
       "type": "string",
       "enum": [
         "unit",
         "item",
         "research_study",
         "copyright"
-      ]
+      ],
+      "description": "Type of profile"
     },
     "groups": {
       "type": "array",
@@ -44,7 +45,7 @@
       "minItems": 1
     }
   },
-  "required": ["id", "label", "type", "groups"],
+  "required": ["id", "label", "profileType", "groups"],
   "definitions": {
     "language_coded_texts": {
       "type": "array",
