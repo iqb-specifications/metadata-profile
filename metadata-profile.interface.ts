@@ -48,5 +48,6 @@ export interface MDProfileGroup {
 export interface MDProfile {
     id: string,
     label: LanguageCodedText[],
+    type: 'unit' | 'item' | 'research_study' | 'copyright',
     groups: MDProfileGroup[];
 }

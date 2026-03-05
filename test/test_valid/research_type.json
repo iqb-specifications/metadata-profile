@@ -1,9 +1,10 @@
 {
-  "id-hihi": "https://raw.githubusercontent.com/iqb-vocabs/p52/master/unit.json",
+  "id": "https://raw.githubusercontent.com/iqb-vocabs/p52/master/unit.json",
   "label": [{
     "lang": "de",
     "value": "IQB Französisch Sek I - Aufgabe"
   }],
+  "type": "research_study",
   "groups": [
     {
       "label": [
