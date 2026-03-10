@@ -99,7 +99,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format": "single"
+            "format": "SINGLE"
           }
         },
         {
@@ -127,7 +127,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format": "single"
+            "format": "SINGLE"
           }
         },
         {
@@ -184,7 +184,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format": "single"
+            "format": "SINGLE"
           }
         },
         {
@@ -237,7 +237,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format": "multiline"
+            "format": "MULTILINE"
           }
         },
         {
@@ -250,7 +250,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format": "multiline"
+            "format": "MULTILINE"
           }
         }
       ]
@@ -273,7 +273,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format":  "single"
+            "format":  "SINGLE"
           }
         },
         {
@@ -331,7 +331,7 @@
           ],
           "type": "TEXT",
           "parameters": {
-            "format": "multiline"
+            "format": "MULTILINE"
           }
         }
       ]

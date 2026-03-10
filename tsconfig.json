@@ -14,6 +14,7 @@
     "rootDir": "."
   },
   "files": [
-    "metadata-profile.interface.ts"
+    "metadata-profile.interface.ts",
+    "index.ts"
   ]
 }
