@@ -18,3 +18,9 @@ Read more:
 ## 0.9
 
 * Zusätzlicher Parameter für Vokabular-Control: `selectionMode` mit den Werten `in-form` (Auswahl wird innerhalb des Metadaten-Formulars als Liste von Radio- bzw. CheckBox-Controls implementiert) oder `dialog` (Auswahl über separate Dialogbox; Default)
+
+
+## 0.10
+
+* Zusätzlicher Parameter für Profile: `target` mit Array von Werten `UNIT`, `ITEM`, `RESEARCH_STUDY`.
+* Alle Enum sind in Großbuchstaben geschrieben.

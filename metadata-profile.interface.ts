@@ -6,7 +6,7 @@ export interface LanguageCodedText {
 export interface ProfileEntryParametersVocabulary {
     url: string,
     allowMultipleValues: boolean,
-    selectionMode: 'in-form' | 'dialog',
+    selectionMode: 'IN_FORM' | 'DIALOG',
     maxLevel: number,
     hideNumbering: boolean,
     hideDescription: boolean,
@@ -45,9 +45,11 @@ export interface MDProfileGroup {
     entries: MDProfileEntry[];
 }
 
+export type Target = 'UNIT' | 'ITEM' | 'RESEARCH_STUDY';
+
 export interface MDProfile {
     id: string,
     label: LanguageCodedText[],
-    type: 'unit' | 'item' | 'research_study' | 'copyright',
+    target: Target[],
     groups: MDProfileGroup[];
 }

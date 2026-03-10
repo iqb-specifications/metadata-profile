@@ -1,10 +1,9 @@
 {
-  "$id": "metadata-profile@iqb-standard@0.9",
+  "$id": "metadata-profile@iqb-standard@0.10",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Metadata Profile",
   "description": "Data interface for defining metadata for objects based on vocabularies of IQB.",
   "type": "object",
-
   "properties": {
     "id": {
       "type": "string",
@@ -14,14 +13,18 @@
       "$ref": "#/definitions/language_coded_texts",
       "description": "Name of the profile"
     },
-    "type": {
-      "type": "string",
-      "enum": [
-        "unit",
-        "item",
-        "research_study",
-        "copyright"
-      ]
+    "target": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "UNIT",
+          "ITEM",
+          "RESEARCH_STUDY"
+        ]
+      },
+      "minItems": 1,
+      "description": "Type of profile"
     },
     "groups": {
       "type": "array",
@@ -39,12 +42,20 @@
             "minItems": 1
           }
         },
-        "required": ["label", "entries"]
+        "required": [
+          "label",
+          "entries"
+        ]
       },
       "minItems": 1
     }
   },
-  "required": ["id", "label", "type", "groups"],
+  "required": [
+    "id",
+    "label",
+    "target",
+    "groups"
+  ],
   "definitions": {
     "language_coded_texts": {
       "type": "array",
@@ -85,9 +96,12 @@
         },
         "selectionMode": {
           "type": "string",
-          "enum": ["in-form", "dialog"],
+          "enum": [
+            "IN_FORM",
+            "DIALOG"
+          ],
           "description": "UI variants: 'in-form' sets an radio or checkbox list in the form, 'dialog' challenges a modal dialog for selection (default).",
-          "default": "dialog"
+          "default": "DIALOG"
         },
         "maxLevel": {
           "type": "integer",
@@ -120,7 +134,9 @@
           "default": []
         }
       },
-      "required": ["url"]
+      "required": [
+        "url"
+      ]
     },
     "text": {
       "type": "object",
@@ -128,9 +144,13 @@
       "properties": {
         "format": {
           "type": "string",
-          "enum": ["single", "multiline", "html"],
+          "enum": [
+            "SINGLE",
+            "MULTILINE",
+            "HTML"
+          ],
           "description": "If true, more then one line of text is prepared for input. Text is wrapped and vertical scrolling is possible.",
-          "default": "single"
+          "default": "SINGLE"
         },
         "textLanguages": {
           "type": "array",
@@ -201,7 +221,12 @@
         },
         "type": {
           "type": "string",
-          "enum": ["text", "vocabulary", "boolean", "number"]
+          "enum": [
+            "TEXT",
+            "VOCABULARY",
+            "BOOLEAN",
+            "NUMBER"
+          ]
         },
         "parameters": {
           "anyOf": [
@@ -220,7 +245,10 @@
           ]
         }
       },
-      "required": ["id", "type"]
+      "required": [
+        "id",
+        "type"
+      ]
     }
   }
 }
