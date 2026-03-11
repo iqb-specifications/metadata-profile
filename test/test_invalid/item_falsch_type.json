@@ -1,0 +1,107 @@
+{
+  "id": "https://raw.githubusercontent.com/iqb-vocabs/p14/master/item.json",
+  "label": [{
+    "lang": "de",
+    "value": "IQB Deutsch Primar 2004 - Item"
+  }],
+  "target": [ "ITEM" ],
+  "groups": [
+    {
+      "label": [
+        {
+          "lang": "de",
+          "value": "Item"
+        }
+      ],
+      "entries": [
+        {
+          "id": "s3",
+          "label": [
+            {
+              "lang": "de",
+              "value": "Itemformat"
+            }
+          ],
+          "type": "VOCAB",
+          "parameters": {
+            "url": "https://w3id.org/iqb/v27/dp/",
+            "allowMultipleValues": false,
+            "hideNumbering": true
+          }
+        },
+        {
+          "id": "s4",
+          "label": [
+            {
+              "lang": "de",
+              "value": "Anforderungsbereich"
+            }
+          ],
+          "type": "VOCABULARY",
+          "parameters": {
+            "url": "https://w3id.org/iqb/v13/a1/",
+            "allowMultipleValues": false,
+            "hideNumbering": true
+          }
+        },
+        {
+          "id": "s5",
+          "label": [
+            {
+              "lang": "de",
+              "value": "Bildungsstandard primär"
+            }
+          ],
+          "type": "VOCABULARY",
+          "parameters": {
+            "url": "https://w3id.org/iqb/v13/k1/",
+            "allowMultipleValues": false
+          }
+        },
+        {
+          "id": "s6",
+          "label": [
+            {
+              "lang": "de",
+              "value": "Bildungsstandards sekundär"
+            }
+          ],
+          "type": "VOCABULARY",
+          "parameters": {
+            "url": "https://w3id.org/iqb/v13/k1/",
+            "allowMultipleValues": true
+          }
+        },
+        {
+          "id": "iqb_time_item",
+          "label": [
+            {
+              "lang": "de",
+              "value": "Itemzeit"
+            }
+          ],
+          "type": "NUMBER",
+          "parameters": {
+            "minValue": 0,
+            "digits": 0,
+            "isPeriodSeconds": true
+          }
+        },
+        {
+          "id": "e4",
+          "label": [
+            {
+              "lang": "de",
+              "value": "Geschätzte Schwierigkeit"
+            }
+          ],
+          "type": "VOCABULARY",
+          "parameters": {
+            "url": "https://w3id.org/iqb/v26/ea/",
+            "allowMultipleValues": false
+          }
+        }
+      ]
+    }
+  ]
+}

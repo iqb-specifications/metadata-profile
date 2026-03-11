@@ -24,3 +24,8 @@ Read more:
 
 * Zusätzlicher Parameter für Profile: `target` mit Array von Werten `UNIT`, `ITEM`, `RESEARCH_STUDY`.
 * Alle Enum sind in Großbuchstaben geschrieben.
+
+
+## 0.11
+
+* AddionalProperties ist in schema.json auf false gesetzt.

@@ -1,5 +1,5 @@
 {
-  "$id": "metadata-profile@iqb-standard@0.10",
+  "$id": "metadata-profile@iqb-standard@0.11",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Metadata Profile",
   "description": "Data interface for defining metadata for objects based on vocabularies of IQB.",
@@ -136,7 +136,8 @@
       },
       "required": [
         "url"
-      ]
+      ],
+      "additionalProperties": false
     },
     "text": {
       "type": "object",
@@ -168,7 +169,8 @@
           "type": "string",
           "description": "Use this regular expression to validate the input value."
         }
-      }
+      },
+      "additionalProperties": false
     },
     "number": {
       "type": "object",
@@ -193,7 +195,8 @@
           "description": "If true, the (integer) value is interpreted as a number of seconds (duration, time period). This might adapt the form controls.",
           "default": false
         }
-      }
+      },
+      "additionalProperties": false
     },
     "boolean": {
       "type": "object",
@@ -205,7 +208,8 @@
         "falseLabel": {
           "$ref": "#/definitions/language_coded_texts"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "entry": {
       "type": "object",

@@ -3,7 +3,7 @@
   "author": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen",
   "license": "MIT",
   "description": "Data interface for defining metadata for objects based on vocabularies of IQB.",
-  "version": "0.10.3",
+  "version": "0.11.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iqb-specifications/metadata-profile.git"
