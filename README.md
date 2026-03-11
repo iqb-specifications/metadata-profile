@@ -28,4 +28,4 @@ Read more:
 
 ## 0.11
 
-* AddionalProperties ist in schema.json auf false gesetzt.
+* AdditioonalProperties ist in schema.json auf false gesetzt.
